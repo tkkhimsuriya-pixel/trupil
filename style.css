@@ -1,0 +1,957 @@
+*{
+    box-sizing:border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body{
+
+    margin:0;
+
+    font-family:Arial,sans-serif;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)
+    ),
+    url("images/bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+.header{
+
+    margin-left:220px;
+
+    height:90px;
+
+    background:linear-gradient(
+    90deg,
+    #1e293b,
+    #2563eb
+    );
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+.header h1{
+
+    font-size:30px;
+
+}
+
+
+
+/* LOGO */
+
+
+.logo{
+
+    width:55px !important;
+
+    height:55px !important;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid white;
+
+}
+
+
+
+/* ================= SIDEBAR ================= */
+
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:220px;
+
+    height:100vh;
+
+    padding-top:100px;
+
+    background:linear-gradient(
+    180deg,
+    #111827,
+    #2563eb
+    );
+
+    z-index:1000;
+
+}
+
+
+
+.sidebar a{
+
+    display:block;
+
+    color:white;
+
+    padding:15px;
+
+    margin:8px;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+}
+
+
+
+.sidebar a:hover{
+
+    background:white;
+
+    color:#2563eb;
+
+}
+
+
+
+/* ================= MAIN ================= */
+
+
+.main{
+
+    margin-left:220px;
+
+    padding:30px;
+
+    min-height:100vh;
+
+}
+
+
+
+/* ================= WELCOME ================= */
+
+
+.welcome{
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1e293b
+    );
+
+    color:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+}
+
+
+
+/* ================= CARDS ================= */
+
+
+.cards{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    width:230px;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px #aaa;
+
+}
+
+
+
+.card h1{
+
+    color:#2563eb;
+
+    font-size:45px;
+
+}
+
+
+
+/* ================= PROFILE ================= */
+
+
+.profile-box{
+
+    background:white;
+
+    width:300px;
+
+    padding:20px;
+
+    margin-top:20px;
+
+    border-radius:20px;
+
+}
+
+
+
+/* ================= CHART ================= */
+
+
+.chart-box{
+
+    background:white;
+
+    width:500px;
+
+    height:350px;
+
+    margin-top:40px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px #ccc;
+
+}
+
+
+
+.chart-box canvas{
+
+    width:100% !important;
+
+    height:250px !important;
+
+}
+
+
+
+/* ================= FORM ================= */
+
+
+form{
+
+    background:white;
+
+    width:400px;
+
+    margin:40px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+
+
+input,select{
+
+    width:90%;
+
+    padding:12px;
+
+    margin:10px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+}
+
+
+
+button{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+
+
+/* ================= TABLE ================= */
+
+
+table{
+
+    width:80%;
+
+    margin:30px auto;
+
+    background:white;
+
+    border-collapse:collapse;
+
+}
+
+
+
+th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px;
+
+}
+
+
+
+td{
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+}
+
+
+
+/* ================= ACTIVITY ================= */
+
+
+.activity,
+.progress-box{
+
+    background:white;
+
+    padding:25px;
+
+    margin-top:30px;
+
+    border-radius:20px;
+
+}
+
+
+
+.activity-item{
+
+    background:#eef2ff;
+
+    padding:15px;
+
+    margin:10px;
+
+    border-radius:10px;
+
+}
+
+
+
+/* ================= PROGRESS ================= */
+
+
+.bar{
+
+    height:25px;
+
+    background:#ddd;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.asset-bar{
+
+    height:100%;
+
+    width:80%;
+
+    background:#2563eb;
+
+}
+
+
+
+.employee-bar{
+
+    height:100%;
+
+    width:60%;
+
+    background:#16a34a;
+
+}
+
+
+
+.assign-bar{
+
+    height:100%;
+
+    width:40%;
+
+    background:#f59e0b;
+
+}
+
+
+
+/* ================= DARK MODE ================= */
+
+
+.dark{
+
+    background:#111827;
+
+    color:white;
+
+}
+
+
+.dark .card,
+.dark .profile-box,
+.dark .activity,
+.dark .progress-box,
+.dark .chart-box{
+
+    background:#1f2937;
+
+    color:white;
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer{
+
+    margin-left:220px;
+
+    background:#1e293b;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+
+
+/* ================= LOGIN ================= */
+
+
+.login-body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1e293b
+    );
+
+}
+
+
+
+.login-box{
+
+    width:380px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px #333;
+
+}
+
+
+
+.login-box img{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+.login-box input{
+
+    width:90%;
+
+    padding:15px;
+
+    margin:10px;
+
+}
+
+
+
+.login-box button{
+
+            width:95%;
+
+    font-size:18px;
+
+}
+/* ===== ATTRACTIVE DASHBOARD DESIGN ===== */
+
+
+body{
+
+background:
+linear-gradient(
+135deg,
+#dbeafe,
+#eef2ff
+);
+
+}
+
+
+/* Header Upgrade */
+
+
+.header{
+
+background:
+linear-gradient(
+90deg,
+#0f172a,
+#2563eb
+);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.25);
+
+}
+
+
+
+/* Sidebar Upgrade */
+
+
+.sidebar{
+
+background:
+linear-gradient(
+180deg,
+#020617,
+#2563eb
+);
+
+box-shadow:
+5px 0 25px rgba(0,0,0,.3);
+
+}
+
+
+
+.sidebar a{
+
+font-size:17px;
+
+transition:.3s;
+
+}
+
+
+.sidebar a:hover{
+
+transform:translateX(10px);
+
+background:white;
+
+color:#2563eb;
+
+}
+
+
+
+/* Welcome Box */
+
+
+.welcome{
+
+background:
+linear-gradient(
+135deg,
+#2563eb,
+#1e293b
+);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.25);
+
+animation:
+slide .8s;
+
+}
+
+
+
+@keyframes slide{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(-30px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+/* Cards */
+
+
+.card{
+
+background:
+
+rgba(255,255,255,.85);
+
+backdrop-filter:
+
+blur(10px);
+
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.15);
+
+
+transition:.4s;
+
+
+}
+
+
+
+.card:hover{
+
+transform:
+
+translateY(-15px)
+scale(1.03);
+
+
+box-shadow:
+
+0 20px 40px rgba(0,0,0,.25);
+
+}
+
+
+
+/* Card Number */
+
+
+.card h1{
+
+font-size:55px;
+
+background:
+
+linear-gradient(
+90deg,
+#2563eb,
+#06b6d4
+);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+
+
+/* Profile */
+
+
+.profile-box{
+
+background:
+
+rgba(255,255,255,.85);
+
+backdrop-filter:
+
+blur(10px);
+
+
+box-shadow:
+
+0 15px 30px #ccc;
+
+}
+
+
+
+/* Chart */
+
+
+/* ===== CENTER CHART ===== */
+
+.chart-box{
+
+    background:white;
+
+    width:700px;
+
+    height:400px;
+
+    margin:40px auto;   /* center */
+
+    padding:25px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.20);
+
+}
+
+
+.chart-box canvas{
+
+    width:100% !important;
+
+    height:300px !important;
+
+}
+
+
+
+/* Activity */
+
+
+.activity-item{
+
+transition:.3s;
+
+}
+
+
+.activity-item:hover{
+
+transform:
+
+translateX(15px);
+
+background:#dbeafe;
+
+}
+
+
+
+/* Button */
+
+
+button{
+
+transition:.3s;
+
+}
+
+
+button:hover{
+
+transform:
+
+scale(1.05);
+
+}
+
+
+/* Footer */
+
+
+footer{
+
+box-shadow:
+
+0 -5px 20px rgba(0,0,0,.2);
+
+}
+.Logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+} 
+body{
+    margin:0;
+    padding:0;
+    background:#eef3f8;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:50px;
+}
+
+.card{
+    width:500px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+.card-header{
+    background:#0d6efd;
+    color:#fff;
+    text-align:center;
+    padding:18px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.card-body{
+    padding:30px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#0d6efd;
+}
+
+.btn{
+    width:100%;
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#084298;
+}
