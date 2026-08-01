@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Niharika Love Quiz ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <!-- Quiz Box -->
+    <div class="container">
+
+        <!-- Welcome Screen -->
+        <div id="welcome" class="screen active">
+
+            <h1>💖 Welcome Niharika 💖</h1>
+
+            <img src="n1.jpeg"
+                 alt="Niharika"
+                 class="profile">
+
+            <h2>🌹 Love Quiz 🌹</h2>
+
+            <p>
+                Answer these 10 questions and unlock a
+                special surprise made only for you. ❤️
+            </p>
+
+            <button onclick="startQuiz()">
+                Start Quiz ❤️
+            </button>
+
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz" class="screen">
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <h3 id="questionNo">
+                Question 1 / 10
+            </h3>
+
+            <h2 id="question">
+                Loading...
+            </h2>
+
+            <div id="options" class="options">
+
+            </div>
+
+            <button id="nextBtn" onclick="nextQuestion()">
+                Next ❤️
+            </button>
+
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result" class="screen">
+
+            <h1>🎉 Quiz Completed 🎉</h1>
+
+            <h2 id="scoreText"></h2>
+
+            <button onclick="showSurprise()">
+                Unlock Surprise ❤️
+            </button>
+
+        </div>
+
+        <!-- Surprise Screen -->
+        <div id="surprise" class="screen">
+            <div class="letter">
+
+<h2>💌 A Letter For You 💌</h2>
+
+<p>
+
+Dear Niharika,
+
+<br><br>
+
+Thank you for coming into my life.
+
+You make every day brighter,
+
+every smile sweeter,
+
+and every moment unforgettable.
+
+I promise to always respect you,
+
+care for you,
+
+and stand beside you.
+
+No matter what happens,
+
+my heart will always belong to you.
+
+❤️
+
+<br><br>
+
+Forever Yours,
+
+<br>
+
+❤️ trupil ❤️
+
+</p>
+
+</div>
+
+            <h1>💖 Congratulations Niharika 💖</h1>
+
+          <img src="n1.jpeg" class="profile" alt="Niharika">
+                 class="profile">
+
+            <h2>
+                You are my everything ❤️
+            </h2>
+
+            <p class="loveMessage">
+
+                Every heartbeat reminds me of you.
+
+                <br><br>
+
+                Thank you for making my life beautiful.
+
+                <br><br>
+
+                🌹 I Love You Forever 🌹
+
+                <br>
+
+                ❤️ Niharika ❤️
+
+            </p>
+
+            <button onclick="restartQuiz()">
+                Play Again ❤️
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Romantic Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/love.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <audio id="bgMusic" loop>
+    <source src="n2.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
